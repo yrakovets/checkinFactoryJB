@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.microfocus.intellij.plugin.gitclient</id>
+    <name>Dimensions Git Client</name>
+    <vendor email="yurii.rakovets@microfocus.com" url="http://www.microfocus.com">Microfocus</vendor>
+
+    <description><![CDATA[
+    Access Dimensions CM repositories using Git
+    ]]></description>
+
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <vcsCheckinHandlerFactory
+                implementation="com.microfocus.intellij.plugin.gitclient.commits.DmCheckinHandlerFactory" order="last"/>
+    </extensions>
+
+</idea-plugin>
